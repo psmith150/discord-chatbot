@@ -34,4 +34,4 @@ def announce(message):
     response = post(url, json = {'message':message,'entity_id':'media_player.living_room_speaker'}, headers=headers)
     if response.status_code != 200:
         return f'Unable to process message "{message}"'
-    return f'Your message "{message}" was announced!"'
+    return f'Your message "{message}" was announced!'
